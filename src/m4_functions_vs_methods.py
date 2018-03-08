@@ -4,7 +4,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Xuechen Bai.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
@@ -82,6 +82,8 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
 
     turtle3()
+    try_methods()
+    try_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -149,6 +151,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 
 def turtle3():
+
     """
     Constructs a classic SimpleTurtle and asks it to draw a
       "ball on pole" shape.
@@ -171,6 +174,13 @@ def turtle3():
 
 
 def try_methods():
+    Lanxi = rg.SimpleTurtle()
+    Lanxi.pen = rg.Pen('brown', 5)
+    Lanxi.forward(150)
+    Lanxi.left(90)
+    Lanxi.forward(50)
+    Lanxi.backward(100)
+
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -187,6 +197,9 @@ def try_methods():
 
 
 def try_functions():
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Causes several SimpleTurtles to do the following:

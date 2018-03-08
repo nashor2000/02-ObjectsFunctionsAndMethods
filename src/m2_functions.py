@@ -4,7 +4,7 @@ Practice DEFINING and CALLING
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # TODO: 1. Xuechen Bai.
 
 ###############################################################################
 #
@@ -102,6 +102,15 @@ def turtle3():
     maja.begin_fill()
     maja.draw_circle(50)
     maja.end_fill()
+
+def turtle4():
+    lanxi = rg.SimpleTurtle()
+    lanxi.speed=15
+    lanxi.pen=rg.Pen('green',5)
+    lanxi.forward(30)
+    lanxi.begin_fill()
+    lanxi.draw_circle(70)
+    lanxi.end_fill()
 
 
 ###############################################################################
