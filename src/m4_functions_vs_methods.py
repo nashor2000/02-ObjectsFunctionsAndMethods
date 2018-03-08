@@ -5,7 +5,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Xuechen Bai.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # TODO: 1. Xuechen Bai
 
 ###############################################################################
 #
@@ -84,6 +84,7 @@ def main():
     turtle3()
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -174,12 +175,12 @@ def turtle3():
 
 
 def try_methods():
-    Lanxi = rg.SimpleTurtle()
-    Lanxi.pen = rg.Pen('brown', 5)
-    Lanxi.forward(150)
-    Lanxi.left(90)
-    Lanxi.forward(50)
-    Lanxi.backward(100)
+    lanxi = rg.SimpleTurtle()
+    lanxi.pen = rg.Pen('brown', 5)
+    lanxi.forward(150)
+    lanxi.left(90)
+    lanxi.forward(50)
+    lanxi.backward(100)
 
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
@@ -197,9 +198,9 @@ def try_methods():
 
 
 def try_functions():
-    jump_and_move_turtle(200,100,300,30)
-    jump_and_move_turtle(100,200,0,0)
-    jump_and_move_turtle(-50,50,100,100)
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Causes several SimpleTurtles to do the following:
@@ -220,6 +221,7 @@ def try_functions():
 
 
 def try_methods_and_functions():
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
@@ -261,6 +263,35 @@ def try_methods_and_functions():
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ###########################################################################
+    james=rg.SimpleTurtle()
+    james.pen=rg.Pen('blue',5)
+    james.backward(150)
+    james.speed=1
+    james.left(30)
+    james.draw_square(100)
+    james.right(60)
+    james.draw_square(100)
+    james.speed=5
+    james.pen=rg.Pen('red',5)
+    for k in range (10):
+        james.draw_square(100)
+        james.left(15)
+
+    james.speed=100
+    james.pen=rg.Pen('red',35)
+    for k in range (8):
+        james.draw_square(300)
+        james.left(60)
+    james.pen=rg.Pen('black',3)
+    james.backward(200)
+    james.draw_circle(30)
+    james.draw_square(50)
+
+
+
+
+
+
 
 
 # -----------------------------------------------------------------------------
